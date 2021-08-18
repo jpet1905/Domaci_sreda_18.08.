@@ -1,0 +1,98 @@
+/*uvozim google font*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#up, #down { /*glavni div-ovi iz HTML */
+    width: 500px;
+    /* height: 450px; */
+}
+#down {
+    margin-left: 250px;
+}
+button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 0 rgba(7,119,85,0.3);
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'Acme', sans-serif;
+}
+button:hover {
+    background-color:rgba(7,119,85, 0.3) ;
+}
+img {
+    height: 120px; /*da mi buttoni ne "skakucu" zbog razl.visine slika*/
+}
+/* uredjujem info karticu */
+#Bulbasaur, #Charmander, #Squirtle, #Vulpix {
+    width: 60%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 30px;
+    /* text-align: center; */
+}
+#Bulbasaur>p, #Charmander>p, #Squirtle>p, #Vulpix>p {
+    margin-bottom: 10px;
+}
+#Bulbasaur>p:first-of-type, #Charmander>p:first-of-type, #Squirtle>p:first-of-type, #Vulpix>p:first-of-type {
+    margin: 10px 0;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5em;
+    text-align: center; 
+}
+/* pojedinacno izmene */
+#Bulbasaur {
+    border-color: rgba(7,119,85);
+    box-shadow: 5px 5px 5px 0 rgba(7,119,85, 0.5);
+}
+#Bulbasaur div:first-child {
+    display: flex;
+    justify-content: center;
+}
+#Bulbasaur>p:first-of-type a{
+    color: rgba(7,119,85);
+}
+#Charmander {
+    border-color:chocolate;
+    box-shadow: 5px 5px 5px 0 rgb(210, 105, 30, 0.5);
+}
+#Charmander div:first-child {
+    display: flex;
+    justify-content: center;
+}
+#Charmander>p:first-of-type a {
+    color: chocolate;
+}
+#Squirtle {
+    border-color: rgb(17, 161, 209);
+    box-shadow: 5px 5px 5px 0 rgba(17, 161, 209, 0.5);
+}
+#Squirtle div:first-child {
+    display: flex;
+    justify-content: center;
+}
+#Squirtle>p:first-of-type a {
+    color: rgb(17, 161, 209);
+}
+#Vulpix {
+    border-color: firebrick;
+    box-shadow: 5px 5px 5px 0 rgb(178, 34, 34, 0.5);
+}
+#Vulpix div:first-child {
+    display: flex;
+    justify-content: center;
+}
+#Vulpix>p:first-of-type a {
+    color: firebrick;
+}
